@@ -1,35 +1,48 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *main - returns a combination  of number
- * Return: return 0 if successful
+ * print_times_table - prints the times table n.
+ * @n: The multiplication table requested.
+ * Return: Nothing.
  */
-
-void main(void)
+void print_times_table(int n)
 {
-	int i, j;
+	int i, j, res;
 
-	for (i = 0; i < 100; i++)
+	if (!(n > 15 || n < 0))
 	{
-		for (j = 0; j < 100; j++)
+		for (i = 0; i <= n; i++)
 		{
-			if (i < 3)
+			for (j = 0; j <= n; j++)
 			{
-				putchar((i / 10) + 48);
-				putchar((i % 10) + 48);
-				putchar(' ');
-				putchar((j / 10) + 48);
-				putchar((j % 10) + 48);
-				if (i != 98 || j != 99)
+				res = (i * j);
+				if (j != 0)
 				{
-					Putchar(',');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
 				}
+				if (res < 10 && j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((res % 10) + ''0');
+				}
+				else if (res >= 10 && res < 100)
+				{
+					_putchar(' ');
+					_putchar((res / 10) + '0');
+					_putchar((res % 10) + '0');
+				}
+				else if (res >= 100 && j != 0)
+				{
+					_putchar((res / 100) +'0');
+					_putchar((res /10) % 10 + '0');
+					_putchar((res % 10) +'0');
+				}
+				else
+					_putchar((res % 10) + '0');
 			}
+			_putchar('\n');
 		}
 	}
-	putchar('\n');
-
-	return (0);
 }
