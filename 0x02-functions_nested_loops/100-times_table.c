@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * times_table - returns a combination  of number
+ *main - returns a combination  of number
  * Return: return 0 if successful
  */
 
-int main(void)
+void main(void)
 {
 	int i, j;
 
