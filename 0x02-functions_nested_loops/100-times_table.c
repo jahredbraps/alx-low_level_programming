@@ -16,11 +16,11 @@ int main(void)
 		{
 			if (i < 3)
 			{
-				_putchar((i / 10) + 48);
-				_putchar((i % 10) + 48);
-				_putchar(' ');
-				_putchar((j / 10) + 48);
-				_putchar((j % 10) + 48);
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
 				if (i != 98 || j != 99)
 				{
 					Putchar(',');
