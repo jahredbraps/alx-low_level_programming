@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - returns a combination  of number
+ * times_table - returns a combination  of number
  * Return: return 0 if successful
  */
 
