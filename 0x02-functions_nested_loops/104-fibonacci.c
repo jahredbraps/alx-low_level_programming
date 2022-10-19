@@ -17,25 +17,6 @@ int main(void)
 		k = i + j;
 		i = j;
 		j = k;
-#include <stdio.h>
-/**
-  * main - print the first 98 fibonacci numbers.
-  * Return: Nothing.
-  */
-int main(void)
-{
-	int count;
-	unsigned long i, j, k;
-	unsigned long m, n, p, carry;
-
-	count = 0;
-	i = 0;
-	j = 1;
-	for (count = 1; count <= 91; count++)
-	{
-		k = i + j;
-		i = j;
-		j = k;
 		printf("%lu, ", k);
 	}
 	m = i % 1000;
