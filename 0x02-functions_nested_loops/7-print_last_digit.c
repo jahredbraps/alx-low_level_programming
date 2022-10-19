@@ -1,24 +1,20 @@
 #include "main.h"
-
 /**
- * print_last_digit - draws adiagonal lines according parameter
- * @n: integer params
+ * print_last_digit - a function that prints the last digit of a number
+ * @nld: number's last digit result
+ * Return: value of the last digit
  */
-void print_last_digit(int n)
+int print_last_digit(int nld)
 {
-	int x;
+int pld;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
-	{
-		for (x = 0; x < n; x++)
-		{
-			for (i = 0; i <= x; i++)
-				_putchar(' ');
-			_putchar(92);
-			_putchar('\n');
-		}
-		_putchar('\n');
-	}
+pld = (nld % 10);
+
+if (pld < 0)
+{
+pld = (-1 * pld);
+}
+
+_putchar(pld + '0');
+return (pld);
 }
