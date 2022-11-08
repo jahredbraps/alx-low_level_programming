@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 #include <stdlib.h>
 /**
  * argstostr - concatenate all arguments of your program with newline
